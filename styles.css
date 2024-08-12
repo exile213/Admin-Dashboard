@@ -68,11 +68,10 @@ body{
 }
 
 .whole-container {
-    width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 2fr / 8fr;
-    grid-template-rows: 2fr / 8fr;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 2fr 8fr;
     background: var(--main-color);
 }
 
@@ -83,35 +82,108 @@ body{
     background: var(--tertiary-color);
     color: var(--accent-color);
 
+    display: grid;
+    grid-template-rows:1fr 3fr 2fr;
+    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.main-sidebar{
+    grid-row:2/3;
+}
+
+.sidebar-title-text{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.sidebar-title{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.sidebar-title-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-right: 30px;
+    background-image: url(images/dashboard.svg);
+}
+
+.sidebar-element{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .sidebar-icon{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
+    margin-right: 30px;
 }
+
+.sidebar-text{
+    font-size: 25px;
+    font-weight:500;
+}
+.sub-sidebar{
+    grid-row: 3/4;
+}
+/*icons*/
 
 .sidebar-icon[data-icon="home-icon"]{
     background-image: url(images/home.svg);
 
 }
+.sidebar-icon[data-icon="profile-icon"]{
+    background-image: url(images/profile.svg);
+
+}
+.sidebar-icon[data-icon="message-icon"]{
+    background-image: url(images/message.svg);
+
+}
+.sidebar-icon[data-icon="history-icon"]{
+    background-image: url(images/history.svg);
+
+}
+.sidebar-icon[data-icon="task-icon"]{
+    background-image: url(images/tasks.svg);
+}
+.sidebar-icon[data-icon="community-icon"]{
+    background-image: url(images/communities.svg);
+
+}
+.sidebar-icon[data-icon="settings-icon"]{
+    background-image: url(images/settings.svg);
+
+}
+.sidebar-icon[data-icon="support-icon"]{
+    background-image: url(images/support.svg);
+}
+.sidebar-icon[data-icon="privacy-icon"]{
+    background-image: url(images/privacy.svg);
+
+}
+/*-------------------------------------------------------*/
 
 
 .header-container {
     grid-column: 2 / 3;
+    padding: 20px;
 }
 
 .content-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 6fr / 2fr;
-    grid-template-rows: 4fr / 4fr;
-    padding:10px;
+    grid-template-columns: 6fr 2fr;
+    grid-template-rows: 4fr 4fr;
+    padding:20px;
 }
 
 .projects-container {
