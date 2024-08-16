@@ -205,6 +205,8 @@ body{
     display: flex;
     gap:20px;
     align-items: center;
+    justify-content: center;
+    margin-right: 100px;
 }
 .user-name, .profile-name{
     font-size: 25px;
@@ -272,7 +274,7 @@ body{
     display: grid;
     grid-template-columns: 4fr 2fr;
     grid-template-rows: 50px 5fr 50px 5fr;
-    padding:20px;
+    padding:30px;
     gap:10px;
 }
 
@@ -286,16 +288,16 @@ body{
     display: grid;
     grid-template-columns: 420px 420px; /* Adjusted the syntax */
     grid-template-rows: repeat(3,1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .project {
-    width: 400px;
-    height: 250px;
+    width: inherit;
+    height: inherit;
     background: var(--accent-color);
     border-radius: 5px;
     padding: 20px;
-    box-shadow: -5px 5px 5px 0px var(--tertiary-color);
+    box-shadow: -5px 5px 1px 0px var(--tertiary-color);
 }
 
 .project-title{
@@ -316,7 +318,85 @@ body{
     grid-area: 2/2/3/3;
 }
 
-.trending-container{
-    grid-column: 2/3;
-    grid-row: 2/3
+.assignment-card-container{
+    width: 400px;
+    height: 450px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 5px 5px 1px 0px var(--tertiary-color);
+    display: grid;
+    grid-template-rows: 3fr 3fr 3fr;
 }
+
+.assignment-card{
+    justify-self: center;
+    align-self: top;
+    width: 350px;
+    height: 120px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 0px var(--tertiary-color);
+    padding: 10px;
+
+}
+
+.assignment-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.trending-container-text{
+    grid-area: 3/2/4/3;
+    align-self: top;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.trending-container{
+    grid-area:4/2/5/3;
+}
+
+.trending-card-container{
+    width: 400px;
+    height: 450px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: 25px 50px;
+    box-shadow: 5px 5px 1px 0px var(--tertiary-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.trending-info-container{
+    align-self: center;
+}
+
+.trending-username{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.trending-icon{
+    align-self: center;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+.trending-icon[data-icon="user2-icon"]{
+    background-image: url(images/user2.svg);
+}
+.trending-icon[data-icon="user3-icon"]{
+    background-image: url(images/user3.svg);
+}
+.trending-icon[data-icon="user4-icon"]{
+    background-image: url(images/user4.svg);
+}
+.trending-icon[data-icon="user5-icon"]{
+    background-image: url(images/user5.svg);
+}
+
+
