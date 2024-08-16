@@ -117,6 +117,11 @@ body{
     display: flex;
     align-items: top;
     margin-top: 20px;
+    padding: 2px 0px;
+}
+
+.sidebar-element:hover{
+    background: var(--secondary-color);
 }
 
 .sidebar-icon{
@@ -134,6 +139,8 @@ body{
 .sub-sidebar{
     grid-row: 3/4;
 }
+
+
 /*icons*/
 
 .sidebar-icon[data-icon="home-icon"]{
@@ -240,6 +247,10 @@ body{
     border:solid 1px;
     border-radius: 10px;
     padding:10px 50px;
+}
+
+.header-buttons:hover{
+    background-color: var(--main-color);
 }
 
 
